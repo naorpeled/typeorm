@@ -9,14 +9,14 @@ try {
   
   const sharp = require('sharp');
   
-  // Convert SVG to PNG - Variant 3
-  sharp('typeorm-thumbnail-variant3.svg')
-    .png()
+  // Convert SVG to PNG - Variant 2
+  sharp('typeorm-thumbnail-variant2.svg')
+    .png({ quality: 100 })
     .resize(1200, 630, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
-    .toFile('typeorm-linkedin-thumbnail.png')
+    .toFile('typeorm-linkedin-thumbnail-variant2.png')
     .then(() => {
       console.log('✅ Successfully converted SVG to PNG!');
-      console.log('📁 Output: typeorm-linkedin-thumbnail.png');
+      console.log('📁 Output: typeorm-linkedin-thumbnail-variant2.png');
       
       // Clean up
       execSync('npm uninstall sharp --no-save', { stdio: 'pipe' });
