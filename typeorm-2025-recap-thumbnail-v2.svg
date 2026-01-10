@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Purple gradient background - slightly refined -->
+    <radialGradient id="backgroundGradient" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#8A3578"/>
+      <stop offset="100%" stop-color="#2D1245"/>
+    </radialGradient>
+    
+    <!-- Modernized decorative circle gradient -->
+    <radialGradient id="circleGradient1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A45A8A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7B2D6B" stop-opacity="0.15"/>
+    </radialGradient>
+    
+    <!-- Drop shadow filter for depth -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    
+    <!-- Subtle glow for accent text -->
+    <filter id="accentGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#backgroundGradient)"/>
+  
+  <!-- Minimal decorative circles - cleaner layout -->
+  <circle cx="150" cy="120" r="200" fill="url(#circleGradient1)" opacity="0.4"/>
+  <circle cx="1050" cy="510" r="180" fill="url(#circleGradient1)" opacity="0.35"/>
+  
+  <!-- Main content container - Variant 2: Modern, refined typography -->
+  <g transform="translate(600, 315)">
+    <!-- TypeORM title with subtle shadow -->
+    <text x="0" y="-55" text-anchor="middle" font-family="Arial, sans-serif" font-size="78" font-weight="bold" fill="white" filter="url(#textShadow)" letter-spacing="-2">
+      TypeORM
+    </text>
+    
+    <!-- 2025 Recap with glow effect -->
+    <text x="0" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="68" font-weight="bold" fill="#FF6B35" filter="url(#accentGlow)" letter-spacing="1">
+      2025 Recap
+    </text>
+  </g>
+  
+  <!-- Minimal accent dots -->
+  <circle cx="420" cy="250" r="5" fill="#FF6B35" opacity="0.7"/>
+  <circle cx="780" cy="380" r="4" fill="#FF6B35" opacity="0.5"/>
+</svg>
