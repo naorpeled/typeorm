@@ -21,19 +21,19 @@
     2025
   </text>
   
-  <!-- Main content container - Variant 3: Bold typography with watermark -->
-  <g transform="translate(600, 290)">
+  <!-- Main content container - Variant 3: Matching current typography -->
+  <g transform="translate(600, 315)">
     <!-- TypeORM title -->
-    <text x="0" y="-30" text-anchor="middle" font-family="Arial, sans-serif" font-size="84" font-weight="bold" fill="white" filter="url(#textShadow)">
+    <text x="0" y="-50" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" filter="url(#textShadow)">
       TypeORM
     </text>
     
-    <!-- 2025 Recap - prominent -->
-    <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#FF6B35" filter="url(#textShadow)">
+    <!-- 2025 Recap -->
+    <text x="0" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#FF6B35" filter="url(#textShadow)">
       2025 Recap
     </text>
   </g>
   
   <!-- Subtle accent line -->
-  <rect x="500" y="400" width="200" height="3" rx="1.5" fill="#FF6B35" opacity="0.6"/>
+  <rect x="500" y="410" width="200" height="3" rx="1.5" fill="#FF6B35" opacity="0.6"/>
 </svg>
